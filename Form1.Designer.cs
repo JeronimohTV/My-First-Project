@@ -32,6 +32,8 @@
             label1 = new Label();
             checkBox1 = new CheckBox();
             lblSure = new Label();
+            checkedListBox1 = new CheckedListBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -65,12 +67,32 @@
             // 
             // lblSure
             // 
-            lblSure.Location = new Point(316, 76);
+            lblSure.Location = new Point(316, 78);
             lblSure.Name = "lblSure";
             lblSure.Size = new Size(164, 20);
             lblSure.TabIndex = 3;
             lblSure.Text = "Fuck You Again";
             lblSure.Visible = false;
+            // 
+            // checkedListBox1
+            // 
+            checkedListBox1.FormattingEnabled = true;
+            checkedListBox1.Items.AddRange(new object[] { "Really?", "That's not necessary", "Take it easy" });
+            checkedListBox1.Location = new Point(421, 76);
+            checkedListBox1.Name = "checkedListBox1";
+            checkedListBox1.Size = new Size(138, 58);
+            checkedListBox1.TabIndex = 4;
+            checkedListBox1.Visible = false;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(421, 140);
+            button2.Name = "button2";
+            button2.Size = new Size(138, 34);
+            button2.TabIndex = 5;
+            button2.Text = "Tell the machine";
+            button2.UseVisualStyleBackColor = true;
+            button2.Visible = false;
             // 
             // Form1
             // 
@@ -78,6 +100,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
+            Controls.Add(checkedListBox1);
             Controls.Add(lblSure);
             Controls.Add(checkBox1);
             Controls.Add(label1);
@@ -95,5 +119,7 @@
         private Label label1;
         private CheckBox checkBox1;
         private Label lblSure;
+        private CheckedListBox checkedListBox1;
+        private Button button2;
     }
 }
