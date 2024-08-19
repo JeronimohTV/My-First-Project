@@ -58,11 +58,12 @@ namespace Test
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (lblUserSays.Text != null)
+            if (rtxtUserMessage.Text != "")
             {
                 panel2.Visible = true;
                 lblUserSays.Text = rtxtUserMessage.Text;
                 lblMachineResults.Text = "You know what? I respect that. \n I apologise for my cold words. \n Your meat suit deserves more warmth from me.";
+                btnReset.Visible = true;
             }
             else
             {
