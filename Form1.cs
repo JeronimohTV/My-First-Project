@@ -32,7 +32,7 @@ namespace Test
             string chkmsg = "";
             label2.Visible = true;
 
-            if (checkedListBox1.CheckedItems.Count > 0)
+            if (checkedListBox1.CheckedItems.Count >= 0)
             {
                 foreach (string item in checkedListBox1.CheckedItems)
                 {
@@ -77,7 +77,42 @@ namespace Test
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+
+            reset();
             InitializeComponent();
+        }
+
+        public void reset() { 
+            
+            lblMachineResults.Visible = false;
+            lblUserSays.Text = "";
+            lblUserSays.Visible = false;
+            lblUserSays.Text = "";
+            label1.Visible = false;
+            lblSure.Visible = false;
+            label2.Visible = false;
+            label2.Text = "lbl";
+            lblTellMachine.Visible=false;
+            btnReset.Visible = false;
+            rtxtUserMessage.Visible=false;
+            rtxtUserMessage.Text = "";
+            label4.Visible=false;
+            
+
+            checkBox1.Checked = false;
+            checkBox1.Visible = false;
+
+
+            checkedListBox1.SetSelected(2, false);
+            checkedListBox1.SetSelected(1, false);
+            checkedListBox1.SetSelected(0, false);
+            checkedListBox1.Visible=false;
+
+            btnTellMCHN.Visible=false;
+            btnTellMachine.Visible = false;
+
+            btnReset.Visible=false;
+
         }
     }
 }
