@@ -5,6 +5,7 @@ namespace Test
         public Form1()
         {
             InitializeComponent();
+            checkedListBox1.ClearSelected();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -103,14 +104,11 @@ namespace Test
             checkBox1.Visible = false;
 
 
-            checkedListBox1.SetSelected(2, false);
-            checkedListBox1.SetSelected(1, false);
-            checkedListBox1.SetSelected(0, false);
+            checkedListBox1.ClearSelected();
             checkedListBox1.Visible=false;
 
             btnTellMCHN.Visible=false;
             btnTellMachine.Visible = false;
-
             btnReset.Visible=false;
 
         }
